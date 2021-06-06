@@ -8,7 +8,10 @@ const images = scoreBoard.getElementsByTagName('img');
 const ul = document.getElementById('phrase').firstElementChild;
 
 const game = new Game();
-
+/**
+ * Ensures that if the Start button is clicked again by user
+ * The UI onscrean keyboard, scoreboard and phrase get's reset. 
+ */
 const ensureUIReset = () =>{
     ul.innerHTML = '';
     for (const image of images) {
@@ -20,7 +23,7 @@ const ensureUIReset = () =>{
         button.classList.remove('wrong');
         button.disabled = false;
     }
-    
+    // reset the missed game property
     game.resetMissed();
 }
 startGameButton.addEventListener('click', (e)=>{
@@ -28,7 +31,9 @@ startGameButton.addEventListener('click', (e)=>{
     console.log('starting game');
     game.startGame();
 })
-
+/**
+ * Event listener delegation for all onscreenKeyboard buttons. 
+ */
 onScreenKeyboard.addEventListener('click',(e) => {
     if(e.target.nodeName === 'BUTTON'){
         game.handleInteraction(e.target);

@@ -1,5 +1,5 @@
 # oop_game_v2
-
+A simple game for guessing a word or phrase limited to 5 mistakes per game. 
 ### Project Structure
 
     oop_game_v2                  # root folder

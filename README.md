@@ -1,6 +1,7 @@
 # PHRASE HUNTER
 A simple game for guessing a word or phrase limited to 5 mistakes per game. 
-![image](https://user-images.githubusercontent.com/9810858/120931257-c2d8b500-c6be-11eb-97ee-615d8da50eb9.png)
+![Animation](https://user-images.githubusercontent.com/9810858/120931441-89ed1000-c6bf-11eb-886c-39002c78f0d2.gif)
+
 
 ### Project Structure
 

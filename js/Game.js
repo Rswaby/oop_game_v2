@@ -123,12 +123,6 @@ class Game {
         }
     }
     /**
-     * reset the missed property when game restarts
-     */
-    resetMissed(){
-        this.missed = 0;
-    }
-    /**
      * a list of potential phrases that will render to the UI
      * @returns {Array<string>}
      */

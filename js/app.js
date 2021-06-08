@@ -7,7 +7,7 @@ const scoreBoard = document.getElementById('scoreboard');
 const images = scoreBoard.getElementsByTagName('img');
 const ul = document.getElementById('phrase').firstElementChild;
 
-const game = new Game();
+let game;
 /**
  * Ensures that if the Start button is clicked again by user
  * The UI onscrean keyboard, scoreboard and phrase get's reset. 
@@ -23,10 +23,9 @@ const ensureUIReset = () =>{
         button.classList.remove('wrong');
         button.disabled = false;
     }
-    // reset the missed game property
-    game.resetMissed();
 }
 startGameButton.addEventListener('click', (e)=>{
+    game = new Game;
     ensureUIReset();
     console.log('starting game');
     game.startGame();

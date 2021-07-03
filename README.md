@@ -18,3 +18,5 @@ open in the browser
 ```sh
 index.html
 ```
+### Live Demo
+https://rswaby.github.io/oop_game_v2/
